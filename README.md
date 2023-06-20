@@ -16,10 +16,15 @@ The API will be available at http://localhost:8000/api/practitioners/.
 The following endpoints are available:
 
 GET /api/practitioners/: Retrieve all Practitioner resources.
+
 POST /api/practitioners/: Create a new Practitioner resource.
+
 PUT /api/practitioners/<pk>/: Update an existing Practitioner resource, where <pk> is the ID of the Practitioner resource.
+
 DELETE /api/practitioners/<pk>/: Delete an existing Practitioner resource, where <pk> is the ID of the Practitioner resource.
-Request Format
+
+**Request Format**
+
 All requests must be made in JSON format. The following is an example of a request to retrieve all Practitioner resources:
 
 
