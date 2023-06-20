@@ -1,17 +1,18 @@
-Getting Started
+**Getting Started**
+
 To get started, you will need to install the following dependencies:
 
-Code snippet
 pip install -r requirements.txt
-Use code with caution. Learn more
+
 Once you have installed the dependencies, you can run the development server:
 
-Code snippet
+
 python manage.py runserver
-Use code with caution. Learn more
+
 The API will be available at http://localhost:8000/api/practitioners/.
 
-Endpoints
+**Endpoints**
+
 The following endpoints are available:
 
 GET /api/practitioners/: Retrieve all Practitioner resources.
@@ -21,16 +22,16 @@ DELETE /api/practitioners/<pk>/: Delete an existing Practitioner resource, where
 Request Format
 All requests must be made in JSON format. The following is an example of a request to retrieve all Practitioner resources:
 
-Code snippet
+
 {
     "method": "GET",
     "url": "/api/practitioners/"
 }
-Use code with caution. Learn more
-Response Format
+
+**Response Format**
+
 The response format will vary depending on the request method. For example, the response to a GET request to retrieve all Practitioner resources will be a JSON array of Practitioner objects. The following is an example of a response to a GET request:
 
-Code snippet
 {
     "practitioners": [
         {
@@ -69,15 +70,15 @@ Code snippet
         }
     ]
 }
-Use code with caution. Learn more
-Errors
+
+**Errors**
 If an error occurs, the response will be a JSON object with the following properties:
 
 status: The HTTP status code of the error.
 message: A message describing the error.
 For example, the following is a response to a PUT request that fails because the Practitioner resource does not exist:
 
-Code snippet
+
 {
     "status": 404,
     "message": "Practitioner not found"
